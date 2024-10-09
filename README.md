@@ -10,8 +10,8 @@ Funcionalidades esperadas dos botões:
 
 - Play   : aciona o timer;<br/>
 - Stop   : para o timer;<br/>
-- +    : aumenta em mais 5 minutos o tempo do timer;<br/>
-- -    : diminui em 5 minutos o tempo do timer.<br/>
+- ++    : aumenta em mais 5 minutos o tempo do timer;<br/>
+- --   : diminui em 5 minutos o tempo do timer.<br/>
 
 <img alt="Galeria" src="./images/projetoFocusTimer2.png" width="100%">
 
