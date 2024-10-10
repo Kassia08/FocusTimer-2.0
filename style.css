@@ -104,13 +104,15 @@ button {
     font-size: 4.8rem;
 }
 
-footer {
-    display: grid;
-    max-width: 50%;
-    gap: 3.2 rem;
-}
-
 footer.button {
     width: 13.8rem;
     height: 15.2rem;
+}
+
+#songs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 50%;
+    gap: 3.2rem;
 }
