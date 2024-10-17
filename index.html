@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="">
+<html lang="pt-br">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,14 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
     <div id="app">
        <button id="toggle-mode">
             <span class="sr-only">Ativar Dark Mode!</span> 
-            <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
+            <i class="ph-bold ph-sun"></i>
         </button> 
 
         <main>
@@ -32,41 +32,42 @@
         </section>
 
         <section id="controls" class="flex">
-            <button 
-                data-action="toggleRunning" 
-                class="ph ph-play-circle">
+            <button  id="play" 
+                data-action="toggleRunning">
+                <img src="./images/play.svg" alt="play">               
                 <span class="sr-only">Iniciar contador</span> 
             </button>
-            <button 
-                data-action="toggleRunning"
-                class="ph ph-stop-circle">
-                <span class="sr-only">Pausar contador</span> 
+            <button id="pause"
+                data-action="toggleRunning">
+                <img src="./images/stop.svg" alt="pause">
             </button>
-            <button 
-                data-action="add"
-                class="ph ph-plus-circle">
-                <span class="sr-only">Aumenta em 5 minutos o tempo</span> 
+            <button id="reset" 
+                data-action="reset">
+                <img src="./images/stop.svg" alt="reset">
             </button>
-            <button 
-                data-action="reduce"
-                class="ph ph-minus-circle">
-                <span class="sr-only">Diminui em 5 minutos o tempo</span> 
+            <button id="add"
+                data-action="add">
+                <img src="./images/+.svg" alt="adicionar 5 minutos">
+            </button>
+            <button id="subtract"
+                data-action="subtract">
+                <img src="./images/-.svg" alt="diminuir 5 minutos">
             </button>
         </section>
         </main>
 
         <footer>
-        <section id="songs">
-            <button class="btn-forest">
+        <section id="sounds">
+            <button class="btn-forest" data-sound-id="forest">
                 <img src="./assets/floresta.svg" alt="desenho de uma árvore">
             </button>
-            <button class="btn-rain">
+            <button class="btn-rain" data-sound-id="rain">
                 <img src="./assets/chuva.svg" alt="desenho de uma núvem com gotas de chuva">
             </button>          
-            <button class= "btn-coffeShop">
+            <button class= "btn-coffeShop" data-sound-id="coffeeShop">
                 <img src="./assets/cafeteria.svg" alt="desenho de uma cafeteria">
             </button>
-            <button class="btn-fireplace">
+            <button class="btn-fireplace" data-sound-id="fireplace">
                 <img src="./assets/lareira.svg" alt="desenho de uma chama de fogo">
             </button>         
         </section>
