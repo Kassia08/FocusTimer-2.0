@@ -14,4 +14,4 @@ export const buttonTimer = new Audio ('./sounds/kichen-timer.mp3')
 buttonForest.loop = true
 buttonRain.loop = true
 buttonCoffeeShop.loop = true
-buttonFireplace.loop = true
+buttonFireplace.loop = true 

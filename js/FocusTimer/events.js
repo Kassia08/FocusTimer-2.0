@@ -15,6 +15,16 @@ export function registerControls() {
     })
 }
 
+document.querySelectorAll('footer.sounds').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const soundId = this.dataset.soundId;
+
+        if (soundId && actions[soundId]) {
+            actions[soundId]()
+        }
+    })
+})
+
 export function setMinutes () {
     el.minutes.addEventListener('focus', () => {
         el.minutes.textContent = ""
@@ -33,13 +43,3 @@ export function setMinutes () {
         el.minutes.removeAttribute('contenteditable')
     })
 } 
-
-document.querySelectorAll('#controls-musics button').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const soundId = this.dataset.soundId;
-
-        if (soundId && actions[soundId]) {
-            actions[soundId]();
-        }
-    });
-});

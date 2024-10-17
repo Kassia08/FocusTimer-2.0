@@ -1,5 +1,6 @@
-export const timerControls = document.querySelector('#main.controls');
-export const controlsMusics = document.querySelector('#footer.sounds');
+export const timerControls = document.querySelector('main');
+export const controlsMusics = document.querySelector('footer');
+
 export const addBtn = document.getElementById('add');
 export const subBtn = document.getElementById('subtract');
 
