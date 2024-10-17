@@ -6,19 +6,21 @@ import * as sounds from './sounds.js'
 export function toggleRunning() {
   console.log('toggleRunning called');
   state.isRunning = document.documentElement.
-  classList.toggle('running')
+  classList.toggle('running');
 
-  timer.countdown()
-  sounds.buttonPressAudio.play()
+  if(state.isRunning) {
+    timer.countdown();
+  }
+  sounds.buttonPressAudio.play();
 }
 
 export function reset() {
     console.log('reset called');
     state.isRunning = false 
-    document.documentElement.classList.remove('running')
+    document.documentElement.classList.remove('running');
 
-    timer.updateDisplay()
-    sounds.buttonPressAudio.play()
+    timer.updateDisplay();
+    sounds.buttonPressAudio.play();
 }
 
 export function add() {
@@ -36,6 +38,7 @@ export function subtract() {
 }
 
 
+console.log(el.forestBtn, el.rainBtn, el.coffeeBtn, el.fireplaceBtn);
 
 el.forestBtn.addEventListener('click', () => {
     toggleSound(el.forestBtn, sounds.buttonForest)
