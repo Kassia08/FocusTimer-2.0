@@ -7,7 +7,7 @@ export const buttonCoffeeShop = new Audio ('./sounds/cafeteria.wav')
 export const buttonFireplace = new Audio ('./sounds/lareira.wav')
 
 
-export const buttonPressAudio = new Audio ('./sounds/button-press.wav')
+export const buttonPress = new Audio ('./sounds/button-press.wav')
 export const buttonTimer = new Audio ('./sounds/kichen-timer.mp3')
 
 
